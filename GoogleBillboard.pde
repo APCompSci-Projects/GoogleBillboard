@@ -2,6 +2,14 @@ public final static String e = "2.7182818284590452353602874713526624977572470936
 public void setup()  
 {            
     //your code here 
+    for(int i = 0; i < e.length(); i++)
+  	{
+    double dNum = Double.parseDouble(e.substring(i,i+10));
+    if (isPrime(dNum)== true){
+      System.out.println(dNum);
+      break;
+    }
+  }
 }  
 public void draw()  
 {   
@@ -9,7 +17,7 @@ public void draw()
 }  
 public boolean isPrime(double dNum)  
 {   
-    //your code here  
+  //your code here  
   if (dNum < 2) {
     return false;
  }
